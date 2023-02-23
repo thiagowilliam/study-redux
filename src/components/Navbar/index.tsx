@@ -27,15 +27,6 @@ export function Navbar() {
           >
             Pagina Inicial
           </Link>
-
-          <Link
-            to="/teste"
-            className={classNames(styles.link, {
-              [styles.selected]: window.location.pathname === '/',
-            })}
-          >
-            Teste
-          </Link>
         </div>
       </div>
       <div className={styles.busca}>

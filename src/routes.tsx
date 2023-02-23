@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 
 const DefaultLayout = lazy(() => import('./layouts/DefaultLayout'))
 const Home = lazy(() => import('./pages/Home'))
-const Teste = lazy(() => import('./pages/Teste'))
+const Categoria = lazy(() => import('./pages/Categoria'))
 
 export function Router() {
   return (
@@ -18,10 +18,10 @@ export function Router() {
           }
         />
         <Route
-          path="/teste"
+          path="/categoria/:nomeCategoria"
           element={
             <Suspense fallback={<div>Loading...</div>}>
-              <Teste />
+              <Categoria />
             </Suspense>
           }
         />
